@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Cucumber Suite" parallel = "false" preserve-order="true">
+  <test name="User Registration First">
+    <classes>
+      <class name="runner.MasterRunner">
+        <parameter name="cucumber.filter.tags" value="UserRegistration"/>
+      </class>
+    </classes>
+  </test>
+  <test name="End To End Second">
+    <classes>
+      <class name="runner.MasterRunner">
+        <parameter name="cucumber.filter.tags" value="EndToEnd"/>
+      </class>
+    </classes>
+  </test>
+</suite>
