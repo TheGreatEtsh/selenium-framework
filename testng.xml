@@ -3,6 +3,7 @@
 	<parameter name="browser" value="chrome"></parameter>
 	<test name="Regression Test">
 		<classes>
+			<class name="tests.UserRegisterationTest"/>
 			<class name="tests.AddToCartTest" />
 			<class name="tests.AddProductReviewTest" />
 			<class name="tests.ChangeCurrencyTest" />

@@ -14,7 +14,7 @@ public class UserRegisterationTest extends TestBase {
 	UserRegistrationPage userRegisterationObject;
 	RegisterResultPage registerResultObject;
 	LoginPage loginObject;
-	String email = "test17@gmail.com";
+	String email = "test103@gmail.com";
 	String password = "KGWouhqofgWOUW";
 
 	@Test(priority = 1)
@@ -44,6 +44,7 @@ public class UserRegisterationTest extends TestBase {
 		loginObject.loginAccount(email, password);
 
 		Assert.assertTrue(homeObject.logoutLink.isDisplayed());
+		testLogoutAccount();
 	}
 
 }
