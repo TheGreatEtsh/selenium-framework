@@ -19,7 +19,7 @@ public class AddProductReviewTest extends TestBase{
 	HomePage homeObject;
 	LoginPage loginObject;
 	
-	String yourEmail = "test17@gmail.com";
+	String yourEmail = "test103@gmail.com";
 	String password = "KGWouhqofgWOUW";
 	
 	String productName = "Apple iPhone 16 128GB";
