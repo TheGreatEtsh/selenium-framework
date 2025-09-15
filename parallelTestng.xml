@@ -1,18 +1,24 @@
-<suite name="nopCommerce Regression Suite" parallel="tests" thread-count="3">
+<suite name="nopCommerce Regression Suite" parallel="tests" thread-count="1">
 	<test name="Chrome Regression Test">
 		<parameter name="browser" value="chrome"/>
+		<parameter name="usage" value="saucelabs"/>
+		<parameter name="platform" value="Windows 10"/>
 		<classes>
 			<class name="tests.ParallelUserRegistrationTest"/>
 		</classes>
 	</test>
 	<test name="Firefox Regression Test">
 		<parameter name="browser" value="firefox"/>
+		<parameter name="usage" value="saucelabs"/>
+		<parameter name="platform" value="Windows 10"/>
 		<classes>
 			<class name="tests.ParallelUserRegistrationTest"/>
 		</classes>
 	</test>
 	<test name="Edge Regression Test">
         <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="usage" value="saucelabs"/>
+        <parameter name="platform" value="Windows 10"/>
         <classes>
             <class name="tests.ParallelUserRegistrationTest"/>
         </classes>
