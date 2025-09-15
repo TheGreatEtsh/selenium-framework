@@ -1,0 +1,20 @@
+<suite name="nopCommerce Regression Suite" parallel="tests" thread-count="3">
+	<test name="Chrome Regression Test">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="tests.ParallelUserRegistrationTest"/>
+		</classes>
+	</test>
+	<test name="Firefox Regression Test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="tests.ParallelUserRegistrationTest"/>
+		</classes>
+	</test>
+	<test name="Edge Regression Test">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <classes>
+            <class name="tests.ParallelUserRegistrationTest"/>
+        </classes>
+    </test>
+</suite>
