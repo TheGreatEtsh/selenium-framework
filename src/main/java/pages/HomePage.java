@@ -16,16 +16,16 @@ public class HomePage extends PageBase {
 
 	}
 
-	@FindBy(linkText = "Register")
+	@FindBy(css = "a.ico-register")
 	WebElement registerLink;
 
-	@FindBy(linkText = "Log in")
+	@FindBy(css = "a.ico-login")
 	public WebElement loginLink;
 
-	@FindBy(linkText = "Log out")
+	@FindBy(css = "a.ico-logout")
 	public WebElement logoutLink;
 
-	@FindBy(linkText = "My account")
+	@FindBy(partialLinkText = "My account")
 	WebElement myAccountLink;
 
 	@FindBy(id = "small-searchterms")
